@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beijing 101 x North Point Promo</title>
+  <!-- Open Graph Meta Tags for Social Media Preview -->
   <meta property="og:image" content="https://i.ibb.co/p63j7ZJD/101-Light-Box-JEM-TCMAnti-Grey-Hair-FA-Sep25.jpg">
   <meta property="og:title" content="Beijing 101 x North Point Promo $68!">
   <meta property="og:description" content="Sign up now for the first trial!">
 </head>
 <body>
   <img src="https://i.ibb.co/p63j7ZJD/101-Light-Box-JEM-TCMAnti-Grey-Hair-FA-Sep25.jpg" style="max-width:100%">
+  <p style="text-align: center; font-family: Arial;">Redirecting to WhatsApp in <span id="countdown">3</span> seconds...<br>
+  <a href="https://wa.me/6596405730?text=Sign%20me%20up%20for%20%5BBeijing%20101%20x%20NP%5D%20Anti-Grey%20Hair%20Treatment%20%40%20%2468%21">Click here if you are not redirected.</a>
+  </p>
   <script>
-    // Auto-redirect to WhatsApp after 2 seconds
+    // Update the countdown timer
+    var seconds = 3;
+    var countdownElement = document.getElementById('countdown');
+    var countdownInterval = setInterval(function() {
+      seconds--;
+      countdownElement.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(countdownInterval);
+      }
+    }, 1000);
+
+    // Auto-redirect to WhatsApp after 3 seconds
     setTimeout(function() {
       window.location.href = "https://wa.me/6596405730?text=Sign%20me%20up%20for%20%5BBeijing%20101%20x%20NP%5D%20Anti-Grey%20Hair%20Treatment%20%40%20%2468%21";
     }, 3000);
